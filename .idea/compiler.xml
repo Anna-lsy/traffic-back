@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-server" />
+        <module name="service-beijing" />
+        <module name="service-guangdong" />
+        <module name="service-shanghai" />
+        <module name="后台" />
+      </profile>
+      <profile name="Annotation profile for demo" enabled="true">
+        <sourceOutputDir name="../service-feign/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../service-feign/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="client" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="service-beijing" target="1.8" />
+      <module name="service-guangdong" target="1.8" />
+      <module name="service-shanghai" target="1.8" />
+      <module name="后台" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="client" options="-parameters" />
+      <module name="eureka-server" options="" />
+      <module name="service-beijing" options="" />
+      <module name="service-guangdong" options="" />
+      <module name="service-shanghai" options="" />
+      <module name="后台" options="" />
+    </option>
+  </component>
+</project>
